@@ -1,3 +1,11 @@
+$default-text-color : $black;
+$default-bg : $light-gray;
+$default-weight: $font-regular;
+$default-font: $rubik;
+
+$heading-fonts: $josefin;
+$heading-weight: $font-bold;
+$heading-color: $purple;
 img{
     max-width: 100%;
 }
@@ -17,8 +25,22 @@ html{
     font-size: 10px;
 }
 
+body{
+    font-size: 1.6rem;
+    color: $default-text-color;
+    background-color: $default-bg;
+    font-family: $default-font;
+    font-weight: $default-weight;
+}
+
 .container{
     margin: 0 auto;
     width: 95%;
     max-width: 1200px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $heading-fonts;
+    font-weight: $heading-weight;
+    color:$heading-color;
 }
