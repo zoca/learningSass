@@ -22,6 +22,7 @@ footer{
                         padding: 5px 0;
                         font-family: $footer-nav-font;
                         font-weight: $font-bold;
+                        font-size: 1.8rem;
 
                         &:hover, 
                             &.active{
@@ -33,7 +34,7 @@ footer{
 
         } // nav end
 
-        p{
+        .copyright{
             color: $footer-color;
             text-align: center;
         } // p end
@@ -47,6 +48,7 @@ footer{
                 ul{
                     display: flex;
                     justify-content: center;
+                    align-items: center;
                     li{
                         a{
                             padding: 0 20px;
