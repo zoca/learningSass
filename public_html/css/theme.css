@@ -1,5 +1,46 @@
-/*fonts*/
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Lato:400,700|Rubik:400,700&display=swap&subset=latin-ext");
+.btn-default, .btn-danger, .btn-success, .btn-warning, .btn-info, .btn-dark {
+  display: inline-block;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-default {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #e02214;
+  color: #ffffff;
+}
+
+.btn-success {
+  background-color: #0de042;
+  color: #ffffff;
+}
+
+.btn-warning {
+  background-color: #f08307;
+  color: #ffffff;
+}
+
+.btn-info {
+  background-color: #02f7df;
+  color: #000000;
+}
+
+.btn-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*fonts*/
 /*    font-family: 'Lato', sans-serif;
 
     font-family: 'Rubik', sans-serif;
@@ -52,7 +93,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -89,7 +131,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -236,7 +279,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -270,7 +314,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -350,7 +395,8 @@ img {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webki-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -418,11 +464,19 @@ header nav ul li a:hover, header nav ul li a.active {
 
 @media (min-width: 768px) {
   header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   header .container nav ul li a {
@@ -450,15 +504,10 @@ and open the template in the editor.
   background: #ffffff;
 }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : Oct 16, 2019, 3:18:04 PM
-    Author     : zoka
-*/
+.service-section {
+  padding: 30px 0;
+}
+
 .comment-section {
   padding: 30px 0;
   background: #ffffff;
@@ -501,21 +550,29 @@ footer .container nav ul li a {
   padding: 5px 0;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  font-size: 1.8rem;
 }
 
 footer .container nav ul li a:hover, footer .container nav ul li a.active {
   color: #0de042;
 }
 
-footer .container p {
+footer .container .copyright {
   color: #ffffff;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   footer .container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .container nav ul li a {
     padding: 0 20px;
@@ -527,5 +584,4 @@ footer .container p {
     padding: 0 30px;
   }
 }
-
 /*# sourceMappingURL=theme.css.map */
