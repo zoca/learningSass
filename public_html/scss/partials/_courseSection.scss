@@ -1,10 +1,45 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : Oct 16, 2019, 3:18:41 PM
-    Author     : zoka
-*/
+$table-border: 1px solid $black;
+$table-head-bg: $purple;
+$thead-color: $white;
+$thead-border-color: 1px solid $white;
 
+$tbody-even-bg: $white;
+$tbody-hover-bg: darken($light-gray, 15%);
+.course-section{
+    padding: 50px 0;
+
+    table{
+        border: $table-border;
+        border-collapse: collapse;
+        width: 100%;
+
+        caption{
+            text-align: left;
+            font-style: italic;
+        }
+        
+        th, td{
+            border: $table-border;
+            padding: 10px 5px;
+        }
+
+        thead{
+            background-color: $table-head-bg;
+            th{
+                color: $thead-color;
+                border: $thead-border-color;
+            }
+        } // thead end
+
+        tbody{
+            tr{
+                &:nth-of-type(even){
+                    background-color: $tbody-even-bg;
+                }
+                &:hover{
+                   background-color: $tbody-hover-bg; 
+                }
+            }
+        }
+    } // table end
+} //section end

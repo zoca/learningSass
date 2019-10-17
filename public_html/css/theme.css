@@ -513,15 +513,43 @@ and open the template in the editor.
   background: #ffffff;
 }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : Oct 16, 2019, 3:18:41 PM
-    Author     : zoka
-*/
+.course-section {
+  padding: 50px 0;
+}
+
+.course-section table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.course-section table caption {
+  text-align: left;
+  font-style: italic;
+}
+
+.course-section table th, .course-section table td {
+  border: 1px solid #000000;
+  padding: 10px 5px;
+}
+
+.course-section table thead {
+  background-color: #8a059e;
+}
+
+.course-section table thead th {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.course-section table tbody tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+.course-section table tbody tr:hover {
+  background-color: #c8c8c8;
+}
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
