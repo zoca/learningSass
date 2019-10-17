@@ -32,7 +32,7 @@ header{
                     font-weight: $font-bold;
 
                     &:hover,
-                    &:active{
+                    &.active{
                         color: $nav-link-hover;
 
                     }

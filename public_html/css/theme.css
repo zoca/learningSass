@@ -412,7 +412,7 @@ header nav ul li a {
   font-weight: 700;
 }
 
-header nav ul li a:hover, header nav ul li a:active {
+header nav ul li a:hover, header nav ul li a.active {
   color: #0de042;
 }
 
@@ -487,8 +487,45 @@ footer {
   background-color: #8a059e;
 }
 
-footer a, footer p {
+footer .container nav ul {
+  display: block;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+footer .container nav ul li a {
+  display: block;
   color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+footer .container nav ul li a:hover, footer .container nav ul li a.active {
+  color: #0de042;
+}
+
+footer .container p {
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .container nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  footer .container nav ul li a {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .container nav ul li a {
+    padding: 0 30px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
