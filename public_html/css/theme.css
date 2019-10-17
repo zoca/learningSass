@@ -389,8 +389,51 @@ header {
   background-color: #8a059e;
 }
 
-header a {
+header .branding {
+  text-align: center;
+}
+
+header .branding a {
   color: #ffffff;
+}
+
+header nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 5px 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+header nav ul li a:hover, header nav ul li a:active {
+  color: #0de042;
+}
+
+@media (min-width: 768px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .container nav ul {
+    display: flex;
+  }
+  header .container nav ul li a {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .container nav ul li a {
+    padding: 5px 15px;
+  }
 }
 
 /*
