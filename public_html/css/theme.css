@@ -1,5 +1,16 @@
+/*
+$btn-default: $dark-gray;
+$btn-default-color: $white;
+$btn-dark-color: $black;
+
+$btn-danger: $red;
+$btn-success: $green;
+$btn-warning: $orange;
+$btn-info: $cyan;
+$btn-dark: $black;
+*/
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Lato:400,700|Rubik:400,700&display=swap&subset=latin-ext");
-.btn-default, .btn-danger, .btn-success, .btn-warning, .btn-info, .btn-dark {
+.btn-default, .btn-danger, .btn-success, .btn-warning, .btn-info, .btn-dark, .btn-fancy {
   display: inline-block;
   padding: 5px 15px;
   border: none;
@@ -11,7 +22,7 @@
 }
 
 .btn-default {
-  background-color: rgba(68, 68, 68, 0.2);
+  background-color: #444444;
   color: #ffffff;
 }
 
@@ -56,14 +67,84 @@
 }
 
 .btn-dark {
-  background-color: #000000;
+  background-color: #1a1a1a;
   color: #ffffff;
 }
 
 .btn-dark:hover {
-  background-color: #333333;
+  background-color: black;
 }
 
+.btn-fancy {
+  background-color: #8a059e;
+  color: #ffffff;
+}
+
+.btn-fancy:hover {
+  background-color: #5f036d;
+}
+
+/*
+.btn-default{
+    @extend %btn;
+    background-color: rgba($btn-default, 0.2);
+    color: colorYiq($btn-default);
+
+    &:hover{
+        background-color: darken($btn-default, 10%);
+    }
+}
+
+.btn-danger{
+    @extend %btn;
+    background-color: $btn-danger;
+    color: colorYiq($btn-danger);
+
+    &:hover{ 
+        background-color: darken($btn-danger, 10%);
+    }
+}
+
+.btn-success{
+    @extend %btn;
+    background-color: $btn-success;
+    color: colorYiq($btn-success);
+
+    &:hover{
+        background-color: darken($btn-success, 10%);
+    }
+}
+
+.btn-warning{
+    @extend %btn;
+    background-color: $btn-warning;
+    color: colorYiq($btn-warning);
+
+    &:hover{
+        background-color: darken($btn-warning, 10%);
+    }
+}
+
+.btn-info{
+    @extend %btn;
+    background-color: $btn-info;
+    color: colorYiq($btn-info);
+
+    &:hover{
+        background-color: darken($btn-info, 10%);
+    }
+}
+
+.btn-dark{
+    @extend %btn;
+    background-color: $btn-dark;
+    color: colorYiq($btn-dark);
+
+    &:hover{
+        background-color: lighten($btn-dark, 20%);
+    }
+}
+*/
 /*fonts*/
 /*    font-family: 'Lato', sans-serif;
 
