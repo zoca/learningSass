@@ -34,7 +34,7 @@ $btn-dark: $black;
     background-color: $btn-danger;
     color: $btn-default-color;
 
-    &:hover{
+    &:hover{ 
         background-color: darken($btn-danger, 10%);
     }
 }
