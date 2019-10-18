@@ -7,9 +7,10 @@ $comment-bg: $white;
   @include styleSection(30px, 30px, $comment-bg);
 
   h2{
-      margin-top: 0;
+      margin-top: 0px;
   }
   .comment-list {
+    list-style: none;
     padding: 0;
     .comment-item {
       display: flex;

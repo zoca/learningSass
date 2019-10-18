@@ -620,10 +620,11 @@ header nav ul li a:hover, header nav ul li a.active {
 }
 
 .comment-section h2 {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .comment-section .comment-list {
+  list-style: none;
   padding: 0;
 }
 
@@ -709,7 +710,7 @@ header nav ul li a:hover, header nav ul li a.active {
   background-image: url(assets/contact.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-attachment: fixed;
 }
 
@@ -723,12 +724,16 @@ header nav ul li a:hover, header nav ul li a.active {
   margin: 0 auto;
 }
 
+.contact-section .contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
 .contact-section .contact-form .form-group .form-control {
+  display: block;
   width: 100%;
   border: 1px solid #000000;
   line-height: 4rem;
-  padding-left: 5px;
-  margin-bottom: 10px;
+  padding: 0px 10px;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;

@@ -1,12 +1,12 @@
 $contact-bg: $white;
-
+$input-border: 1px solid $black;
 .contact-section {
   @include styleSection(150px, 150px, $contact-bg);
 
   background-image: url(assets/contact.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-attachment: fixed;
 
   h2 {
@@ -19,12 +19,13 @@ $contact-bg: $white;
     margin: 0 auto;
 
     .form-group {
+        margin-bottom: 1.5rem;
       .form-control {
+        display: block;
         width: 100%;
-        border: 1px solid $black;
+        border: $input-border;
         line-height: 4rem;
-        padding-left: 5px;
-        margin-bottom: 10px;
+        padding: 0px 10px;
         @include radius(4px);
       }
       label {
