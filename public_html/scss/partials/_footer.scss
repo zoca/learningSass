@@ -29,7 +29,7 @@ footer{
 
                         &:hover, 
                             &.active{
-                            color: $footer-hover-color;
+                            color: lighten(complement($footer-bg), 15%);
                         }
                     }
                 } //li end
